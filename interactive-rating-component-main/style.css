@@ -15,11 +15,12 @@
 
     /* Neutral Colors*/
 
-    --white: hsl(0, 0%, 100%);
+    --white: hsl(207, 27%, 94%);
     --light-grey: hsl(217, 12%, 63%);
     --medium-grey: hsl(216, 12%, 54%);
     --dark-blue: hsl(213, 19%, 18%);
     --very-dark-blue: hsl(216, 12%, 8%);
+    --gradient-background: linear-gradient(to right bottom, #252d37, rgba(37, 45, 55, 0.2));
 
 }
 
@@ -33,7 +34,13 @@ body {
 }
 
 h1 {
+    font-weight: 400;
+    font-size: 1.7rem;
     color: var(--white);
+}
+
+p {
+    color: var(--light-grey);
 }
 
 .mainbox {
@@ -42,23 +49,19 @@ h1 {
     justify-content: space-between;
     gap: 2rem;
     width: 22%;
-    padding: 2rem;
-    background-color: var(--very-dark-blue);
+    padding: 2.2rem;
     border-radius: 2rem;
+    background: var(--gradient-background)
 }
 
-.mainbox__star img{
-    width: 1.4rem;
-    background-color: var(--light-grey);
-    border-radius: 50% ;
-}
-
-.mainbox__title {
-
-}
-
-.mainbox__paragraph {
-
+.mainbox__star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--dark-blue);
+    border-radius: 50%;
 }
 
 .mainbox__rating {
@@ -68,11 +71,50 @@ h1 {
 }
 
 .mainbox__rating-numbers {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--dark-blue);
+    border-radius: 50%;
+    color: var(--medium-grey);    
+    transition: 200ms;
+    box-shadow: 0 0 5px 1px var(--dark-blue);
 }
 
-.mainbox__submitbutton {
+.mainbox__rating-numbers:active {
+    background-color: var(--medium-grey);
+}
 
+.mainbox__rating-numbers--selected {
+    background-color: var(--medium-grey);
+}
+
+.mainbox__rating-numbers:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    box-shadow: 0 0 5px 1px var(--dark-blue);
+    cursor: pointer;
+}
+
+.mainbox__submit-button{
+    width: 100%;
+    border: none;
+    background-color: var(--orange);
+    height: 2.8rem;
+    border-radius: 2rem;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    transition: 200ms;
+}
+
+.mainbox__submit-button:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    cursor: pointer;
 }
 
 
