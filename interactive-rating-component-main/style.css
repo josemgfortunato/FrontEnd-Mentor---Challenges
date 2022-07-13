@@ -88,7 +88,8 @@ p {
 }
 
 .mainbox__rating-numbers--selected {
-    background-color: white;
+    background-color: var(--medium-grey);
+    color: var(--white);
 }
 
 .mainbox__rating-numbers:hover {
