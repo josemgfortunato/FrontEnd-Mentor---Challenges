@@ -29,7 +29,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000;
+    background-color: var(--black);
 }
 
 h1 {
@@ -43,7 +43,7 @@ h1 {
     gap: 2rem;
     width: 22%;
     padding: 2rem;
-    background-color: var(hsl(228, 11%, 9%));
+    background-color: var(--very-dark-blue);
     border-radius: 2rem;
 }
 
