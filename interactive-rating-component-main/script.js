@@ -1,9 +1,10 @@
+//Elements selected from HTML page
 
 const numbersEl = document.querySelectorAll(".mainbox__rating-numbers")
 const mainlEl = document.querySelector("#main")
 const submitEl = document.querySelector("#submit")
 
-
+//Function to change CSS Class of rating options
 
 numbersEl.forEach(element => {
     element.addEventListener('click', () => { 
@@ -13,13 +14,15 @@ numbersEl.forEach(element => {
     })
 })
 
+//Function to restore CSS Class of rating options to Default
+
 function clean() {
     numbersEl.forEach(number => {
         number.classList.remove('mainbox__rating-numbers--selected')
     }
 )}
 
-// ratingResult()
+//Function to add new contents to Main Session on button click
 
 function ratingResult(number) {
     submitEl.addEventListener('click', () => {
