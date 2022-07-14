@@ -1,22 +1,16 @@
-const oneEl = document.querySelector("#one");
-const twoEl = document.querySelector("#two");
-const threeEl = document.querySelector("#three");
-const fourEl = document.querySelector("#four");
-const fiveEl = document.querySelector("#five");
 
-const elements = [oneEl, twoEl, threeEl, fourEl, fiveEl];
+const numbersEl = document.querySelectorAll(".mainbox__rating-numbers");
 
-elements.forEach(element => {
-    element.addEventListener('click', () => {    
-        if (element.className = 'mainbox__rating-numbers') {
-            element.classList.add('mainbox__rating-numbers--selected');
-        } else {
-            if (element.className = 'mainbox__rating-numbers--selected') {  
-                element.classList.add('mainbox__rating-numbers');  
-            }
-        }
+
+numbersEl.forEach(element => {
+    element.addEventListener('click', () => { 
+    clean()    
+    element.classList.add('mainbox__rating-numbers--selected')
+    })
+})
+
+function clean() {
+    numbersEl.forEach(number => {
+        number.classList.remove('mainbox__rating-numbers--selected')
     }
-);
-    
-});
-
+)}
