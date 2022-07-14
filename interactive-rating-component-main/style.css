@@ -97,7 +97,7 @@ p {
     cursor: pointer;
 }
 
-.mainbox__submit-button{
+.mainbox__submit-button {
     width: 100%;
     border: none;
     background-color: var(--orange);
@@ -114,6 +114,34 @@ p {
     background-color: var(--white);
     color: var(--orange);
     cursor: pointer;
+}
+
+.mainbox__illustration {
+    display: flex;
+    justify-content: center;
+}
+
+.mainbox__youselected {
+    display: flex;
+    justify-content: center;
+}
+
+.mainbox__youselected-text {
+    width: 57%;
+    background-color: var(--dark-blue);
+    box-shadow: 0 0 5px 1px var(--dark-blue);
+    color: var(--orange);
+    border-radius: 1rem;
+    text-align: center;
+    padding: .3rem;
+}
+
+.mainbox__text {
+    text-align: center;
+}
+
+.mainbox__text h1 {
+    margin-bottom: .8rem;
 }
 
 
